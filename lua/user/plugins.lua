@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use { "nvim-lua/plenary.nvim", commit="968a4b9afec0c633bc369662e78f8c5db0eba249" }
   use {"ms-jpq/coq_nvim", commit="cbbd564a27755ab3a87e0440b5559c44498c7e1a" }
   use {"jiangmiao/auto-pairs", commit="39f06b873a8449af8ff6a3eee716d3da14d63a76"}
-  use {'iamcco/markdown-preview.nvim', commit="02cc3874738bc0f86e4b91f09b8a0ac88aef8e96", run = 'cd app && yarn install', cmd = 'MarkdownPreview'}
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
