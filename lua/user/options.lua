@@ -16,13 +16,13 @@ local options = {
   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
   tabstop = 2,                             -- insert 2 spaces for a tab
   expandtab = true,                        -- convert tabs to spaces
-  cursorline = true,                       -- highlight the current line
+  cursorline = false,                      -- highlight the current line
   number = true,                           -- set numbered lines
   relativenumber = true,                   -- set relative numbered lines
   numberwidth = 4,                         -- set number column width to 2 {default 4}
   wrap = false,                            -- display lines as one long line
-  scrolloff = 10,                          -- minimum lines at the top/bottom
-  sidescrolloff = 8,
+  scrolloff = 15,                          -- minimum lines at the top/bottom
+  sidescrolloff = 10,
   -- ?
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   undofile = true,                         -- enable persistent undo
