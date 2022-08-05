@@ -25,8 +25,8 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
--- Lexplore(file navigator)
-keymap("n", "<leader>e", ":Lex 30<CR>", opts)
+-- netrw
+keymap("n", "<leader>n", "<cmd>Lex<CR>", opts)
 
 
 -- Resize with arrows
