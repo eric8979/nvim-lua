@@ -27,7 +27,6 @@ local options = {
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   undofile = true,                         -- enable persistent undo
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-  guifont = "monospace:h17",               -- the font used in graphical neovim applications
   swapfile = false,                        -- creates a swapfile
   signcolumn = "yes",                      -- always show the sign column, otherwise it would shift the text each time
   conceallevel = 0,                        -- `` is visible in markdown files
