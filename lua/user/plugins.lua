@@ -45,10 +45,21 @@ return packer.startup(function(use)
   use { "wbthomason/packer.nvim", commit="00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } 
   -- Useful lua functions used by lots of plugins
   use { "nvim-lua/plenary.nvim", commit="968a4b9afec0c633bc369662e78f8c5db0eba249" }
-  use {"ms-jpq/coq_nvim", commit="cbbd564a27755ab3a87e0440b5559c44498c7e1a" }
   use {"jiangmiao/auto-pairs", commit="39f06b873a8449af8ff6a3eee716d3da14d63a76"}
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  
+  -- Colorscheme
   use({"NLKNguyen/papercolor-theme"})
+  
+  -- cmp (auto-completion)
+  use "hrsh7th/cmp-buffer"
+  use "hrsh7th/cmp-path"
+  use "hrsh7th/cmp-cmdline"
+  use "hrsh7th/nvim-cmp"
+  -- luasnip
+  use "L3MON4D3/LuaSnip"
+  use "saadparwaiz1/cmp_luasnip"
+  use "rafamadriz/friendly-snippets"
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
