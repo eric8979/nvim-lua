@@ -7,6 +7,7 @@ local options = {
   hlsearch = true,                         -- highlight all matches on previous search pattern
   showmode = true,                         -- show -- INSERT --
   showtabline = 2,                         -- always show tabs
+  ignorecase = true,
   smartcase = true,                        -- smart case (for searching)
   smartindent = true,                      -- e.g. indenting for {, }
   splitright = true,                       -- force all vertical splits to the right of the current window
@@ -23,7 +24,6 @@ local options = {
   wrap = false,                            -- display lines as one long line
   scrolloff = 15,                          -- minimum lines at the top/bottom
   sidescrolloff = 10,
-  -- ?
   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
   undofile = true,                         -- enable persistent undo
   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
