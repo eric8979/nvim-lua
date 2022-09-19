@@ -1,4 +1,4 @@
-local options = {
+local settings = {
   backup = false,                          -- create a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   fileencoding = "utf-8",                  -- the encoding written to a file
@@ -33,9 +33,9 @@ local options = {
   pumheight = 10,                          -- pop up menu height
 }
 
--- ?
 vim.opt.shortmess:append "c"
 
-for k, v in pairs(options) do
+for k, v in pairs(settings) do
   vim.opt[k] = v
 end
+
