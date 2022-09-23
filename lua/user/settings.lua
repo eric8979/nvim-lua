@@ -2,7 +2,7 @@ local settings = {
   backup = false,                          -- create a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
   fileencoding = "utf-8",                  -- the encoding written to a file
-  mouse = "",                             -- allow the mouse to be used in normal mode
+  mouse = "n",                             -- allow the mouse to be used in normal mode
   cmdheight = 2,                           -- more space in the neovim command line for displaying messages
   hlsearch = true,                         -- highlight all matches on previous search pattern
   showmode = true,                         -- show -- INSERT --
@@ -38,4 +38,3 @@ vim.opt.shortmess:append "c"
 for k, v in pairs(settings) do
   vim.opt[k] = v
 end
-
