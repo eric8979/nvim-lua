@@ -3,6 +3,7 @@ require("user.keymaps")
 require("user.plugins")
 
 -- load after user.plugins
+require("user.lsp")
 require("user.cmp")
 require("user.telescope")
 require("user.autopairs")
