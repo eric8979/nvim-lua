@@ -42,15 +42,15 @@ packer.init {
 return packer.startup(function(use)
 
   -- Packer can manage itself
-  use { "wbthomason/packer.nvim", commit="00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" } 
+  use { "wbthomason/packer.nvim", commit="00ec5adef58c5ff9a07f11f45903b9dbbaa1b422" }
   use { "nvim-lua/plenary.nvim", commit="968a4b9afec0c633bc369662e78f8c5db0eba249" }
-  
+
   -- Colorscheme
   use({"NLKNguyen/papercolor-theme"})
   use { "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" }
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter" }
-  
+
   -- cmp (auto-completion)
   use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
   use { "hrsh7th/cmp-buffer", commit = "62fc67a2b0205136bc3e312664624ba2ab4a9323" } -- buffer completions
@@ -66,7 +66,7 @@ return packer.startup(function(use)
   -- language Server
   use { "williamboman/nvim-lsp-installer" } -- language server installer
   use { "neovim/nvim-lspconfig" }
-  use { "jose-elias-alvarez/null-ls.nvim", commit = "ff40739e5be6581899b43385997e39eecdbf9465" } -- for formatters and linters
+  use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
   use { "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" }
 
   -- telescope
