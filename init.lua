@@ -4,6 +4,7 @@ require("user.plugins")
 
 -- load after user.plugins
 require("user.lsp")
+require("user.null-ls")
 require("user.cmp")
 require("user.telescope")
 require("user.autopairs")

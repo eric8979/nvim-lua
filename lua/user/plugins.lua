@@ -76,6 +76,8 @@ return packer.startup(function(use)
 
 
   -- Functional Plugins
+  -- Python audo-indent
+  use { "Vimjas/vim-python-pep8-indent" }
   -- Git
   use { "lewis6991/gitsigns.nvim" }
   -- Comment
