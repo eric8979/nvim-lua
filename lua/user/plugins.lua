@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use({"NLKNguyen/papercolor-theme"})
   use { "kyazdani42/nvim-web-devicons", commit = "8d2c5337f0a2d0a17de8e751876eeb192b32310e" }
   -- Treesitter
-  use { "nvim-treesitter/nvim-treesitter" }
+  use { 'nvim-treesitter/nvim-treesitter', run=':TSUpdate' }
 
   -- cmp (auto-completion)
   use { "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" } -- The completion plugin
