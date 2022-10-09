@@ -13,5 +13,3 @@ require("user.colorscheme")
 require("user.nvim-tree")
 require("user.treesitter")
 require("user.gitsigns")
-
--- testing ssh
